@@ -1,0 +1,135 @@
+<div id="Forms" ng-controller="formsCtrl">
+	<!-- <h3 class="page-title">品牌标识</h3> -->
+	<ol class="breadcrumb">
+	  <li><a ui-sref="index"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+	  <li><a ui-sref="index.form">企业文化</a></li>
+	  <li class="active">品牌标识</li>
+	</ol>
+	<div class="row">
+		
+
+		<div class="col-md-6">
+			<div class="panel panel-default no-border">
+				<div class="panel-heading clearfix" style="background:#242a30;  color:#fff;">
+					<div class="panel-title">品牌标识</div>
+					 
+					<ul direc-ul class="panel-tool-options" id="panel-tool-options"></ul>
+				</div>
+			
+				<!-- panel body -->
+				<div class="panel-body">
+					
+					<div ng-repeat="obj in res">
+						<h3>{{obj.tit}}</h3>
+						<p>{{obj.content}}</p>	
+						<ul>
+							<li ng-repeat="v in obj.list">{{v}}</li>
+						</ul>				
+					</div>
+
+				</div>
+			</div>
+	    </div>
+		<div class="col-md-6">
+			<div class="col-md-12" ng-repeat="i in [1,2]">
+				<div class="panel panel-default">
+					<div class="panel-heading clearfix" style="background:#242a30; color:#fff;">
+						<h3 class="pull-left">Basic Form</h3>
+						<ul direc-form class="list-inline pull-right">
+							
+						</ul>
+					</div>
+					<div class="panel-body" >
+						<form>
+							<div class="form-group">
+								<label for="emailaddress">Email address</label>
+								<input type="email" class="form-control" id="emailaddress" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password" placeholder="password">
+							</div>
+							<div class="ckeckbox">
+								<label>
+									<input type="checkbox">
+									Ckeck me out
+								</label>
+								
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	<div class="col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading clearfix" style="background:#242a30; color:#fff;>
+				<h3 class="pull-left">Input Group & Addons</h3>
+				<ul direc-form class="list-inline pull-right">
+					<!-- <li ><i class="glyphicon glyphicon-chevron-down"></i></li>
+					<li><i class="glyphicon glyphicon-refresh"></i></li>
+					<li ng-click="closePanel('panelDefault3')"><i class="glyphicon glyphicon-remove"></i></li> -->
+				</ul>
+			</div>
+			<div class="panel-body">
+				<form>
+					<div class="form-group row">
+						<label class="col-sm-2 control-label">Left addon</label>
+						<div class="col-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon">@</span>
+								<input type="text" placeholder="Username" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="line-hashed"></div>
+					<div class="form-group row">
+						<label class="col-sm-2 control-label">Right addon</label>
+						<div class="col-sm-10">
+							<div class="input-group">
+								
+								<input type="text" class="form-control">
+								<span class="input-group-addon">.00</span>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						
+						<label class="col-sm-2 control-label"></label>
+						<div class="col-sm-10">
+							<div class="input-group">
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-primary">Go!</button>
+								</span>
+								<input type="text" class="form-control">
+							</div>
+
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 control-label">With dropdown</label>
+						<div class="col-sm-10">
+							<div class="input-group">
+								<div class="input-group-btn">
+									<button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Action</a></li>
+									</ul>
+								</div>
+								<input type="text" class="form-control">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</div>

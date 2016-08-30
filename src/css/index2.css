@@ -1,0 +1,17 @@
+#directors{
+	padding: 0;
+}
+#directors .panel-heading{
+
+}
+#directors .panel-body{
+	height: 500px;
+	overflow: auto;
+}
+#division {
+	padding:0;
+}
+#division .panel-body{
+	height: 500px;
+	overflow: auto;
+}

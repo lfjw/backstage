@@ -1,0 +1,75 @@
+
+	
+<!-- 第一版 -->
+<!-- <div id="login" class="container" ng-controller="login">
+	<div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6">
+		<form  class="form-horizontal" role="form">
+			<div class="form-group">
+				<label class="col-md-3 control-label"><i class="glyphicon glyphicon-bell"></i>&nbsp;类型：</label>
+				<div class="col-md-9 ">
+					<select name="" id="">
+						<option value="">管理员</option>
+						<option value="">用户</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label  class="col-md-3 control-label"><i class="glyphicon glyphicon-user"></i>&nbsp;账户：</label>
+				<div class="col-md-9">
+					<input type="text" class="form-control" placeholder="请输入账号" ng-model="txt">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="" class="col-md-3 control-label"><i class="glyphicon glyphicon-lock"></i>&nbsp;密码：</label>
+				<div class="col-md-9">
+					<input type="password" class="form-control" placeholder="只能是字母数字下划线" id='pas' ng-model="pas">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-offset-3 col-md-9">
+					<div class="checkbox">
+						<label><input type="checkbox">自动登录</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-offset-3 col-md-9">
+					<div class="btn btn-default btn-info"><a href="javascript:void(0)" ng-click="centerBtn()">登录</a></div>
+					<button class="btn btn-default btn-link col-md-offset-3"><a href="#">注册</a></button>
+				</div>
+			</div>
+		</form>
+		
+		
+	</div>
+</div> -->
+<!-- 第二版 -->
+<div class="login" ng-controller="login">
+	<div class="loading">
+		
+		<ul>
+			
+			<li>
+				<span>User Name</span>
+				<input type="text" placeholder="请输入账号" ng-model="txt">
+			</li>
+			<li>
+				<span>Password</span>
+				<input type="password" placeholder="请输入密码" ng-model="pas">
+			</li>
+			<li>
+				<input type="checkbox"> <i>Ramember me</i>
+				
+			</li>
+			<li><button class="" ng-click="centerBtn()">Login</button></li>
+		</ul>
+		<div  class="callback">
+			<a href="#">Lost password</a>　|　<a href="#">Go Back To Bulime</a>
+		</div>
+		
+
+
+
+	</div>
+</div>
+

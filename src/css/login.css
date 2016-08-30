@@ -1,0 +1,155 @@
+
+
+/* #login{
+	position:absolute;
+	left: 0;
+	top:0;
+	
+	width:100%;
+	height: 100%;
+	
+	background: #333;
+	color: #fff;
+	
+	
+	
+}
+#login a{
+	
+}
+#login form{
+	border-radius: 10px;
+	margin:30% auto 0;
+	padding:60px;
+	background: #00b8ce;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  font-size: 12px; }
+
+body, html {
+  width: 100%;
+  height: 100%; 
+  background: #ccc;
+}
+
+em, i, b {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+.login {
+  height: 400px;
+  background:#2d353c!important;
+  left: 0;
+  right: 0;
+  top: -10%;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+
+}
+  .login .loading {
+    width: 308px;
+    height: 332px;
+    left: 0;
+    right: 0;
+    top: -10%;
+    bottom: 0;
+    margin: auto;
+    position: absolute; }
+    .login .loading .title {
+      width: 100%;
+      height: 40px;
+      color: #5EA51D; }
+      .login .loading .title h2 {
+        float: left;
+        width: 46%;
+        height: 60px;
+        text-align: center;
+        line-height: 40px;
+        padding: 8px;
+        font-size: 36px;
+        color: #000;
+       // background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#25608C), to(#C4E0E5));
+        font-weight: bold;
+        color: transparent;
+        -moz-color: #06F;
+        -webkit-background-clip: text; }
+        .login .loading .title h2:nth-of-type(2) {
+          border-radius: 10px;
+          background: #79C62F;
+          color: #fff;
+          background: -webkit-gradient(linear, 0 0, 0 bottom, from(#25608C), to(#C4E0E5)); }
+    .login .loading ul {
+      
+      margin-top: 50px; }
+      .login .loading ul p {
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#25608C), to(#C4E0E5)); }
+      .login .loading ul li {
+        height: 50px;
+        width: 80%;
+        margin-left: 20px;
+        padding: 20px 0;
+        margin-bottom: 20px; }
+        .login .loading ul li span {
+          display: block;
+          margin-bottom: 10px;
+          font-size: 14px;
+         color: #fff; }
+        .login .loading ul li input[type=password] {
+          width: 100%;
+          display: block;
+          border: none;
+          outline: none;
+          border: 1px solid #C0C1BC;
+          height: 30px;
+          box-shadow: 0px 5px 9px -3px rgba(0, 0, 0, 0.4) inset;
+          padding-left: 10px; }
+        .login .loading ul li input[type=text] {
+          width: 100%;
+          display: block;
+          border: none;
+          outline: none;
+          border: 1px solid #C0C1BC;
+          height: 30px;
+          box-shadow: 0px 5px 9px -3px rgba(0, 0, 0, 0.4) inset;
+          padding-left: 10px; }
+        .login .loading ul li input[type=checkbox] {
+          width: 18px;
+          height: 18px;
+          border: none;
+          display: inline-block;
+          background: -webkit-gradient(linear, 0 0, 0 bottom, from(#25608C), to(#C4E0E5));
+          position: relative;
+          bottom: -5px; }
+        .login .loading ul li button {
+         width: 100%;
+          height: 30px;
+          background: #00acac;
+          font-size: 16px;
+          color: #fff;
+          outline: none;
+        
+          border: none;
+          border: #000; }
+        .login .loading ul li i {
+          font-size: 14px;
+          color: #000; }
+  .login .callback {
+    padding-left: 10px;
+    margin-top: 20px; }
+    .login .callback a {
+      color: #25608C;
+      font-size: 16px;
+      font-weight: bold; }
+
+/*# sourceMappingURL=login.css.map */

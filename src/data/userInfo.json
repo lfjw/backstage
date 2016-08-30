@@ -1,0 +1,83 @@
+
+{
+ 	"table":[
+ 		{
+		  	"title":"Striped Rows",  
+		    "catalogue":[
+		  	    {"id":"0","number":"#","FIRST":"Name","FIRST1":"age","user":"sex"},
+		  	    {"id":"1","number":"1","FIRST":"胡莉","FIRST1":"19","user":"女"},
+		  	    {"id":"2","number":"2","FIRST":"周华","FIRST1":"19","user":"男"},
+		  	    {"id":"3","number":"3","FIRST":"李飞","FIRST1":"17","user":"女"},
+		  	    {"id":"4","number":"4","FIRST":"周杰伦","FIRST1":"30","user":"男"}   
+			]
+	    },
+	    {
+		  	"title":"Striped Rows",  
+		    "catalogue":[
+		  	    {"id":"0","number":"#","FIRST":"Name","FIRST1":"age","user":"sex"},
+		  	    {"id":"1","number":"1","FIRST":"赵薇","FIRST1":"30","user":"女"},
+		  	    {"id":"2","number":"2","FIRST":"李连杰","FIRST1":"19","user":"男"},
+		  	    {"id":"3","number":"3","FIRST":"赵丽颖","FIRST1":"27","user":"女"},
+		  	    {"id":"4","number":"4","FIRST":"林心如","FIRST1":"30","user":"女"}   
+			]
+	    },
+	     {
+		  	"title":"Striped Rows",  
+		    "catalogue":[
+		  	    {"id":"0","number":"#","FIRST":"Name","FIRST1":"age","user":"sex"},
+		  	    {"id":"1","number":"1","FIRST":"赵茹","FIRST1":"25","user":"女"},
+		  	    {"id":"2","number":"2","FIRST":"杨杰","FIRST1":"30","user":"男"},
+		  	    {"id":"3","number":"3","FIRST":"王菲","FIRST1":"40","user":"女"},
+		  	    {"id":"4","number":"4","FIRST":"林心如","FIRST1":"30","user":"女"}   
+			]
+	    },
+	     {
+		  	"title":"Striped Rows",  
+		    "catalogue":[
+		  	   {"id":"0","number":"#","FIRST":"Name","FIRST1":"age","user":"sex"},
+		  	   {"id":"1","number":"1","FIRST":"胡雷","FIRST1":"25","user":"男"},
+		  	   {"id":"2","number":"2","FIRST":"李志军","FIRST1":"29","user":"男"},
+		  	   {"id":"3","number":"3","FIRST":"王婷","FIRST1":"26","user":"女"},
+		  	   {"id":"4","number":"4","FIRST":"王妮","FIRST1":"10","user":"女"}   
+			]
+	    }
+	],
+	"vip":[
+  	    {
+  	    	"id":"1",
+  	    	"img":"./src/images/a1.png",
+  	    	"name":"John Smith",
+  	    	"ti":"Member since 2008",
+  	    	"losat":"Last login yesterday"
+		},
+		{
+  	    	"id":"2",
+  	    	"img":"./src/images/a2.png",
+  	    	"name":"John Smith",
+  	    	"ti":"Member since 2008",
+  	    	"losat":"Last login yesterday"
+		},
+		{
+  	    	"id":"3",
+  	    	"img":"./src/images/a3.png",
+  	    	"name":"John Smith",
+  	    	"ti":"Member since 2008",
+  	    	"losat":"Last login yesterday"
+		},
+		{
+  	    	"id":"4",
+  	    	"img":"./src/images/a4.png",
+  	    	"name":"John Smith",
+  	    	"ti":"Member since 2008",
+  	    	"losat":"Last login yesterday"
+		},
+		{
+  	    	"id":"5",
+  	    	"img":"./src/images/a5.png",
+  	    	"name":"John Smith",
+  	    	"ti":"Member since 2008",
+  	    	"losat":"Last login yesterday"
+		}
+  	     
+	]
+}

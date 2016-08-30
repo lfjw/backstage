@@ -1,0 +1,154 @@
+body{
+  background:#1d1d1d;
+ 
+}
+
+#indexWrap{
+  padding:0;
+  margin:0;
+
+}
+.selected{
+  background: blue;
+}
+#box{
+  width:300px;
+  height: 100px;
+  background: #e6e6e6;
+  position: fixed;
+  right:-300px;
+  top:20%;
+  z-index: 1000;
+  border-radius: 0 0 0 5px;
+}
+#box>#setBtn{
+  position: absolute;
+  left:-35px;
+  top:0;
+  width:40px;
+  height: 40px;
+  background: #e6e6e6;
+  text-align: center;
+  line-height:35px;
+  border-radius: 5px;
+  font-size: 20px;
+  -webkit-transition:right 1s;
+
+}
+
+#box #colorPanel li{
+    float: left;
+    margin:10px 5px;
+    width:30px;
+    height: 30px;
+  
+    list-style: none;
+    border-radius: 5px;
+}
+#box #colorPanel li:hover{
+  opacity: 0.8;
+}
+.left {
+  padding: 0;
+  height: 100%;
+  }
+  .left .logo img {
+    margin: 8px 0;
+    padding: 9px 10px;
+    vertical-align: middle; }
+  .left .logo .brand {
+    color: #fff;
+    font-weight: bold; }
+  .left button {
+    float: right;
+    color: #fff; }
+  .left nav {
+    clear: both;
+    padding: 0; }
+    .left nav .panel-default {
+      line-height: 50px;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      background: none;
+      font-size: 20px; 
+    }
+      .left nav .panel-default > a {
+        font-size: inherit;
+        color: #fff; }
+       .left nav .panel-default > a> .glyphicon{
+          font-size: inherit;
+          padding-right:10px;
+       }
+      .left nav .panel-default .list-group-item:first-child {
+        border-radius: 0; }
+      .left nav .panel-default > a.list-group-item:hover, .left nav .panel-default a.list-group-item:focus {
+        background: #00b8ce; }
+      .left nav .panel-default .list-group-item {
+        font-size: 20px;
+        background: none;
+        border: none; }
+      .left nav .panel-default .panel-collapse {
+        background: #000; }
+        .left nav .panel-default .panel-collapse a {
+          text-align: center;
+          color: #ccc;
+          background: url("../images/nav2.png") repeat-y 10px center; }
+        .left nav .panel-default .panel-collapse a.active {
+          color: #fff;
+          background: url("../images/nav1.png") repeat-y 10px center; }
+        .left nav .panel-default .panel-collapse a.list-group-item:hover, .left nav .panel-default .panel-collapse a.list-group-item:focus {
+          background: #1d1d1d url("../images/nav2.png") repeat-y 10px center; }
+        .left nav .panel-default .panel-collapse a.active:hover, .left nav .panel-default .panel-collapse a.active:focus {
+          color: #fff;
+          background: #1d1d1d url("../images/nav1.png") repeat-y 10px center; }
+
+.right {
+  padding: 0;
+  margin:0;
+  height: 100%;
+  background: #ccc; }
+  .right .head {
+    height: 80px;
+    line-height: 80px;
+    background: #ececec; }
+    .right .head .userInfo img {
+      margin-left: 20px;
+      width: 50px;
+      height: 50px;
+      vertical-align: middle;
+      border-radius: 50%; }
+    .right .head .userInfo .dropdown button {
+      background: none;
+      outline: none;
+      color: #666; }
+    .right .head .userInfo .dropdown .dropdown-menu {
+      margin-top: 30px; }
+  .right .main #Forms {
+    padding: 0 10px; }
+    .right .main #Forms .panel-heading h3 {
+      display: inline-block; }
+    .right .main #Forms .panel-heading ul {
+      margin-top: 23px;
+      float: right; }
+      .right .main #Forms .panel-heading ul li {
+        padding: 0 10px;
+        color: red;
+        display: inline-block;
+        list-style: none; }
+.main-content .panel-primary .panel-heading{
+   background: #242a30;
+}
+#Messages .panel-heading{
+  background: #242a30;
+}
+.main-content .panel .panel-body{
+  height: 400px;
+  overflow: auto;
+}
+#Things{
+  border: none;
+}
+#Things .panel-heading{
+  background: #242a30;
+}

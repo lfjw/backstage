@@ -1,0 +1,355 @@
+<!--index.html-->
+<div class="panel" id="indexWrap" ng-controller="indexCtrl">
+	<!--颜色面板悬停窗-->
+	<div id="box" color-box>
+		
+	</div>
+	<!-- leftStart -->
+ 	<div class="left col-xs-12 col-sm-2 col-md-2 col-lg-2">
+		<!-- logo -->
+		<div class="logo">
+			<img src="src/images/logo.png" alt="" id="logoImg"><span class="brand">Moudifi</span><button ng-click="clickNavButton()" class="navbar-toggle collapse in" data-toggle="collapse" data-target="#example-navbar-collapse"><i class="glyphicon glyphicon-align-justify"></i></button>
+		</div>
+ 		<!-- 导航start -->
+		
+		<nav  direc-nav class="panel-group collapse navbar-collapse" id="accordion" ng-class="{true:'in',false:''}[navBtn]">
+			<!-- <div class="panel panel-default">
+			    <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="javascript:void(0);#collapseOne">
+			    	<i class="glyphicon glyphicon-home"></i>
+				   首页
+				</a>
+				 <div id="collapseOne" class="panel-collapse collapse nav">
+					<a ui-sref="index" class="list-group-item active">公司简介</a>
+					<a ui-sref="index.manage" class="list-group-item"  >公司管理</a>
+					
+				 </div>
+			</div>
+			<div class="panel panel-default">
+			    <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="javascript:void(0);#collapseTow">
+			    	<i class="glyphicon glyphicon-stats"></i>
+				   公司业务
+				</a>
+				 <div id="collapseTow" class="panel-collapse collapse nav">
+					<a ui-sref="index.ui_element" class="list-group-item">主要业务</a>
+					<a ui-sref="index.list" class="list-group-item"  >业务架构</a>
+					
+				 </div>
+			</div>
+			<div class="panel panel-default">
+			    <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="javascript:void(0);#collapseThree">
+			    	<i class="glyphicon glyphicon-stats"></i>
+				   企业文化
+				</a>
+				 <div id="collapseThree" class="panel-collapse collapse nav">
+					<a ui-sref="index.form" class="list-group-item">品牌标识</a>
+					<a ui-sref="index.honor" class="list-group-item">价值观</a>
+					
+				 </div>
+			</div>
+			<div class="panel panel-default">
+			    <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="javascript:void(0);#collapseFour">
+			    	<i class="glyphicon glyphicon-stats"></i>
+				   会员管理
+				</a>
+				 <div id="collapseFour" class="panel-collapse collapse nav">
+					<a ui-sref="index.tables" class="list-group-item">商家管理</a>
+					<a ui-sref="index.user" class="list-group-item">用户管理</a>
+					
+				 </div>
+			</div> -->
+		 
+		</nav>
+ 	</div>
+	<!-- Main container -->
+    <div class="right col-xs-12 col-sm-10 col-md-10 col-lg-10">
+		<!-- 用户头部 -->
+		<div class="main-header">
+		    <div class="col-sm-6 col-xs-7">
+			<!-- 用户 -->	
+			<ul class="user-info pull-left">          
+			  	<li class="profile-info dropdown">
+			  		<a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;" aria-expanded="false"><img class="img-circle avatar" src="src/images/man-3.jpg">John Henderson<span class="glyphicon glyphicon-chevron-down"></span></a>
+					<!-- 用户目录 -->
+					<ul class="dropdown-menu">
+						<li><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>My profile</a></li>
+						<li><a href="javascript:;"><i class="glyphicon glyphicon-envelope"></i>Messages</a></li>
+						<li><a href="javascript:;"><i class="glyphicon glyphicon-asterisk"></i>Tasks</a></li>
+						<li class="divider"></li>
+						<li><a href="javascript:;"><i class="glyphicon glyphicon-cog"></i>Account settings</a></li>
+						<li><a ui-sref="login"><i class="glyphicon glyphicon-log-out"></i>Logout</a></li>
+					</ul>
+			  	</li>
+			</ul>
+		</div>
+		<div class="col-sm-6 col-xs-5">
+			<div class="pull-right">
+				<!-- 用户内容 -->
+				<ul class="user-info pull-left">
+				  <!-- 通知 -->
+				  	<li class="notifications dropdown">
+					<a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" class="dropdown-toggle" href="javascript:;"><i class="glyphicon glyphicon-warning-sign"></i><span class="badge badge-info">6</span></a>
+					<ul class="dropdown-menu pull-right">
+						<li class="first">
+							<div class="small"><a class="pull-right danger" href="#">Mark all Read</a> You have <strong>3</strong> new notifications.</div>
+						</li>
+						<li>
+							<ul class="dropdown-list">
+								<li class="unread notification-success"><a href="#"><i class="glyphicon glyphicon-user pull-right"></i><span class="block-line strong">New user registered</span><span class="block-line small">30 seconds ago</span></a></li>
+								<li class="unread notification-secondary"><a href="#"><i class="glyphicon glyphicon-heart pull-right"></i><span class="block-line strong">Someone special liked this</span><span class="block-line small">60 seconds ago</span></a></li>
+								<li class="unread notification-primary"><a href="#"><i class="glyphicon glyphicon-user pull-right"></i><span class="block-line strong">Privacy settings have been changed</span><span class="block-line small">2 hours ago</span></a></li>
+								<li class="notification-danger"><a href="#"><i class="glyphicon glyphicon-remove-sign pull-right"></i><span class="block-line strong">Someone special liked this</span><span class="block-line small">60 seconds ago</span></a></li>
+								<li class="notification-info"><a href="#"><i class="glyphicon glyphicon-italic pull-right"></i><span class="block-line strong">Someone special liked this</span><span class="block-line small">60 seconds ago</span></a></li>
+								<li class="notification-warning"><a href="#"><i class="glyphicon glyphicon-stats pull-right"></i><span class="block-line strong">Someone special liked this</span><span class="block-line small">60 seconds ago</span></a></li>
+							</ul>
+						</li>
+						<li class="external-last"> <a href="javascript:;" class="danger">View all notifications</a> </li>
+					</ul>
+				  </li>
+				  
+				  <!-- 信息 -->
+				  <li class="notifications dropdown">
+					<a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" class="dropdown-toggle" href="javascript:;"><i class="glyphicon glyphicon-envelope"></i><span class="badge badge-secondary">12</span></a>
+					<ul class="dropdown-menu pull-right">
+						<li class="first">
+							<div class="dropdown-content-header"><i class="fa fa-pencil-square-o pull-right"></i> Messages</div>
+						</li>
+						<li>
+							<ul class="media-list">
+								<li class="media">
+									<div class="media-left"><img alt="" class="img-circle img-sm" src="src/images/domnic-brown.png"></div>
+									<div class="media-body">
+										<a class="media-heading" href="javascript:;">
+											<span class="text-semibold">Domnic Brown</span>
+											<span class="media-annotation pull-right">Tue</span>
+										</a>
+										<span class="text-muted">Your product sounds interesting I would love to check this ne...</span>
+									</div>
+								</li>
+								<li class="media">
+									<div class="media-left"><img alt="" class="img-circle img-sm" src="src/images/john-smith.png"></div>
+									<div class="media-body">
+										<a class="media-heading" href="javascript:;">
+											<span class="text-semibold">John Smith</span>
+											<span class="media-annotation pull-right">12:30</span>
+										</a>
+										<span class="text-muted">Thank you for posting such a wonderful content. The writing was outstanding...</span>
+									</div>
+								</li>
+								<li class="media">
+									<div class="media-left"><img alt="" class="img-circle img-sm" src="src/images/stella-johnson.png"></div>
+									<div class="media-body">
+										<a class="media-heading" href="javascript:;">
+											<span class="text-semibold">Stella Johnson</span>
+											<span class="media-annotation pull-right">2 days ago</span>
+										</a>
+										<span class="text-muted">Thank you for trusting us to be your source for top quality sporting goods...</span>
+									</div>
+								</li>
+								<li class="media">
+									<div class="media-left"><img alt="" class="img-circle img-sm" src="src/images/alex-dolgove.png"></div>
+									<div class="media-body">
+										<a class="media-heading" href="javascript:;">
+											<span class="text-semibold">Alex Dolgove</span>
+											<span class="media-annotation pull-right">10:45</span>
+										</a>
+										<span class="text-muted">After our Friday meeting I was thinking about our business relationship and how fortunate...</span>
+									</div>
+								</li>
+								<li class="media">
+									<div class="media-left"><img alt="" class="img-circle img-sm" src="src/images/domnic-brown.png"></div>
+									<div class="media-body">
+										<a class="media-heading" href="javascript:;">
+											<span class="text-semibold">Domnic Brown</span>
+											<span class="media-annotation pull-right">4:00</span>
+										</a>
+										<span class="text-muted">I would like to take this opportunity to thank you for your cooperation in recently completing...</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="external-last"><a class="danger" href="javascript:;">All Messages</a></li>
+					</ul>
+				  </li>
+				</ul>
+				
+			</div>
+		  </div>
+		</div>
+		<!-- ui-view -->
+		<div ui-view>
+
+			<!-- Main content -->
+			<div class="main-content">
+				<!-- <h1 class="page-title">公司简介</h1> -->
+				<ol class="breadcrumb">
+				  	<li><a ui-sref="index"><i class="glyphicon glyphicon-home"></i>首页</a></li>
+				  	<li><a ui-sref="index.manage">公司简介</a></li>
+				  	<li class="active"><a ui-sref="index.manage">公司简介</a></li>
+				</ol>
+				<div class="row">
+					<div class="col-md-6" >
+						<div class="panel panel-primary no-border" style="padding:0;border-color: #00b8ce;" ng-hide="flag">
+							<div class="panel-heading  clearfix">
+								<div class="panel-title">公司简介</div>
+							<ul class="panel-tool-options " id="panel-tool-options" >
+								 <li>
+								 	<a href="javascript:void(0)" id="dropdown-menu">
+								 		<span class="glyphicon glyphicon-certificate"></span>
+								 	</a>
+								 	<ul class="dropdown-menu dropdown-menu-right">
+								 		<li>
+								 			<a href="javascript:void(0)">
+								 				<i class="glyphicon glyphicon-retweet"></i>Updatedata	
+								 			</a>
+								 		</li>
+								 		
+								 	</ul>
+								 </li>
+								  <li>
+								 	<a href="javascript:void(0)" >
+								 		<span class="glyphicon glyphicon-random"></span>
+								 	</a>
+								 </li>
+								  <li>
+								 	<a href="javascript:void(0)" >
+								 		<span class="glyphicon glyphicon-chevron-down" ng-click="toggle()"></span>
+								 	</a>
+								 </li>
+								  <li>
+								 	<a href="javascript:void(0)">
+								 		<span class="glyphicon glyphicon-remove" ng-click="hidden()"></span>
+								 	</a>
+								 </li>
+							 </ul> 
+						    </div>
+							<!-- panel body -->
+							<div class="panel-body" ng-hide="myVar" >
+								<p class="col-md-3"><img src="src/images/0.png" alt=""></p>
+								<p>{{res.introduce}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-primary no-border">
+							<div class="panel-heading no-border clearfix"> 
+								<h2 class="panel-title">最新动态</h2>
+								<ul class="panel-tool-options"> 
+									 <li class="dropdown">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;" aria-expanded="false"><i class="glyphicon glyphicon-cog icon-2x"></i></a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Update data</a></li>
+											<li><a href="#"><i class="glyphicon glyphicon-th-list"></i> Detailed log</a></li>
+											<li><a href="#"><i class="glyphicon glyphicon-time"></i> Statistics</a></li>
+											<li class="divider"></li>
+											<li><a href="#"><i class="glyphicon glyphicon-remove"></i> Clear list</a></li>
+										</ul>
+									 </li> 
+								</ul>
+							</div>	 
+							<div class="panel-body" style="height:360px;overflow:auto;">
+								<ul class="list-item">
+									<li ng-repeat="i in res.dynamic">
+										<div class="feed-element">{{i}}</div>
+									<li>
+								</ul>
+							</div>
+							<button class="btn btn-primary btn-block btn-2x">SHOW MORE</button>
+						</div>	
+					</div>
+					
+			</div>
+			<!--New Message-->
+			<div class="row">
+				<div class="col-lg-12" >
+					<div class="panel panel-default" id="Messages">
+						<div class="panel-heading no-border clearfix"> 
+							<h2 class="panel-title">New Messages</h2>
+						</div> 
+						<!-- panel body --> 
+						<div class="panel-body">
+							<ul class="list-item message-list">
+								<li ng-repeat="i in res.title">
+									<i class="glyphicon glyphicon-envelope icon-2x message_pan"></i>
+									<div class="message-body">
+										<h5>{{i.name}}</h5>
+										<p>{{i.tit}}</p>
+									</div>
+								</li>
+								
+							</ul>
+							<div class="more">
+								<button class="btn btn-primary">Click More</button>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<form>
+								<div class="input-group">
+									<input type="text" class="form-control bg-silver" palceholder="Enter message">
+									<span class="input-group-btn">
+										<button class="btn btn-primary">send</button>
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12" >
+					<div class="panel panel-primary" id="Things">
+						<div class="panel-heading clearfix" >
+							<div class="panel-title">最新事件</div>
+							<ul class="panel-tool-options" id="panel-tool-options">
+							 <li>
+							 	<a href="javascript:void(0)" >
+							 		<span class="glyphicon glyphicon-certificate" style="color:#fff"></span>
+							 	</a>
+							 </li>
+							  <li>
+							 	<a href="javascript:void(0)" >
+							 		<span class="glyphicon glyphicon-random" style="color:#fff"></span>
+							 	</a>
+							 </li>
+							  <li>
+							 	<a href="javascript:void(0)" >
+							 		<span class="glyphicon glyphicon-chevron-down" style="color:#fff"></span>
+							 	</a>
+							 </li>
+							  <li>
+							 	<a href="javascript:void(0)" >
+							 		<span class="glyphicon glyphicon-remove" style="color:#fff"></span>
+							 	</a>
+							 </li>
+						    </ul> 
+						</div>
+						<!-- panel body -->
+						<div class="panel-body">
+							<p ng-repeat="obj in res.things" class="col-md-6">
+								<img ng-src="{{obj.img}}">
+								{{obj.txt}}
+							</p>
+							
+						</div>
+					</div>
+				</div>
+				
+		    </div>
+			
+			
+			
+				
+			<!-- Footer -->
+			<footer class="footer-main" ele-ment> 
+				<!--  © 2016 <strong>Mouldifi</strong> Admin Theme by <a target="_blank" href="#/">G-axon</a>   -->
+			</footer>	
+			<!-- /footer -->
+			
+			</div>
+			<!-- /main content -->
+	  	</div>
+    </div>
+    <!-- /main container -->
+	
+</div>
+

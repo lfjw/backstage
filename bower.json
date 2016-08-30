@@ -1,0 +1,25 @@
+{
+  "name": "xiaozu_compress",
+  "authors": [
+    "Jiwei <810331119@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap":"*",
+    "angular":"*",
+    "angular-ui-router":"*",
+    "oclazyload":"*",
+    "angular-animate":"*"
+  }
+}

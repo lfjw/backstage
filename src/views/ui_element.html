@@ -1,0 +1,46 @@
+
+ <div class="ui-page-container">
+ 
+	<div class="ui-main-container" ng-controller="uiElement">
+		
+		<!--main-content-->
+		<div class="ui-main-content">
+			<!-- <h1 class="ui-page-title">主要业务</h1> -->
+			<ol class="breadcrumb breadcrumb-2">
+				<li>
+					<a ui-sref="index">Home</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Ui Elements</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Panels</a>
+				</li>
+			</ol>
+			<div class="col-md-12">
+				<div class="col-md-6 div" ng-repeat="i in res.business" style="height:240px">
+					<div class="panel panel-primary no-border" style="padding:0;" >
+						<div class="panel-heading clearfix">
+							 <div class="panel-title">{{i.product}}</div>	
+							 <div create-dom class="panel-tool-options panel2">
+							 </div>
+					    </div>
+						<!-- panel body -->
+						<div  class="panel-body">
+							<img ng-src="{{i.pic}}" style="width:100px;height:100px;float:left;">
+							<p>{{i.detail}}</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		    <footer class="ui_footer_main">
+		    	"@2016"
+		    	<strong>Mouldifi</strong>
+		    	"Admin Theme by"
+		    	<a target="_blank" href="#/">G-axon</a>
+		    </footer>
+	    </div>
+    </div>
+</div>
+	

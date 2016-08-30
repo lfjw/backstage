@@ -1,0 +1,87 @@
+<div class="Tables" ng-controller="tables">
+	<!-- <h1 class="page-title">商家管理</h1> -->
+	<ol class="breadcrumb">
+	  <li><a ui-sref="index"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+	  <li><a ui-sref="index.form">会员管理</a></li>
+	  <li class="active">商家管理</li>
+	</ol>
+	<div class="Tables-main" id="Tables-main" >
+		 <div class="col-md-12">
+			<div class="col-md-6" ng-repeat="i in e.table">
+				<div class="panel panel-default">
+				 
+					<div class="panel-heading clearfix" id="Tables-main-h3" style="background:#242a30; color:#fff;">
+						<h3 class="panel-title">{{i.title}}</h3>
+						<ul class="panel-tool-options"> 
+							<li><a data-rel="collapse" href="javascript:;"><i class="glyphicon glyphicon-chevron-down"></i></a></li>
+							<li><a data-rel="reload" href="javascript:;"><i class="glyphicon glyphicon-refresh"></i></a></li>
+							<li><a data-rel="close" href="javascript:;"><i class="glyphicon glyphicon-remove"></i></a></li>
+						</ul>
+					</div>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr ng-repeat="obj in i.catalogue">
+										<th>{{obj.number}}</th>
+										<th>{{obj.FIRST}}</th>
+										<th>{{obj.FIRST1}}</th>
+										<th>{{obj.user}}</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div> 
+		
+		<div class="col-md-12">
+			
+			<div class="table-responsive">
+				<table class="table table-users table-bordered table-hover">
+					<thead>
+						<tr style="background:#242a30;color:#fff;">
+							<th colspan="8">Custom Table</th>
+						</tr>
+					</thead>
+					<tbody ng-repeat="obj in e.vip">
+						<tr>
+							<td class="size-60 text-center">
+								<div class="form-checkbox">
+									<input value="value1" name="name1" type="checkbox">	<span class="check">
+										
+									</span>
+								</div>
+							</td>
+							<td class="size-80">
+								<img title="" alt="" ng-src="{{obj.img}}" class="avatar img-circle">
+							</td>
+							<td><strong>{{obj.name}}</strong></td>
+							<td>{{obj.ti}}</td>
+							<td>{{obj.losat}}</td>
+							<td class="text-center"><span class="badge badge-bordered"  >Admin</span></td>
+							<td class="text-center"><i class="glyphicon glyphicon-ok green-color"></i></td>
+							<td class="size-80 text-center">
+								<div class="dropdown">
+									<a class="more-link" data-toggle="dropdown" href="#/"><i class="glyphicon glyphicon-star glyphicon glyphicon-star-empty"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="javascript:;">Change Date Range</a></li>
+										<li><a href="javascript:;">Change Graph Type</a></li>
+										<li><a href="javascript:;">Other Settings</a> </li>
+									</ul>
+								</div>
+							</td>
+						 </tr> 
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		 <footer class="footer-main"> 
+			© 2016 <strong>Mouldifi</strong> Admin Theme by <a target="_blank" href="#/">G-axon</a> 
+		 </footer>
+
+	</div>
+	

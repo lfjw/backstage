@@ -1,0 +1,13 @@
+
+
+.selected{background:green;color:white;}
+.list_nav{height:40px;line-height:40px;}
+.list_nav span{float:left;width:146px;text-align:center;}
+.list_title{clear:both;padding-left:30px;line-height:40px;font-size:12px;}
+#performance{
+	background: #fff;
+}
+#performance h3{color:#fff;text-align:center;line-height: 30px;background: #505050;}
+.tab thead tr th{text-align:center;border:1px solid #ccc;}
+.tab tr td{text-align:center;border:1px solid #ccc;}
+.tab thead td{text-align:center;border:1px solid #ccc;width:40px;}

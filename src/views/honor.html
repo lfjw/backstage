@@ -1,0 +1,36 @@
+<div ng-controller="honorCtrl">
+   
+	<!-- <h3 class="page-title">企业文化与荣誉</h3> -->
+   <ol class="breadcrumb">
+     <li><a ui-sref="index"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+     <li><a ui-sref="index.form">企业文化与荣誉</a></li>
+     <li class="active">公司荣誉</li>
+   </ol>
+   <div class="col-md-12">
+      <div class="panel clearfix">
+        <div class="panel-heading clearfix" style="background:#242a30;  color:#fff;">
+           <div class="panel-title">公司荣誉</div>
+           <ul direc-ul class="panel-tool-options"></ul>
+        </div>
+        
+        <div class="panel-body" style="height:500px;overflow:auto">
+          <div ng-repeat="obj in res" >
+             <h2>
+                <i class="glyphicon glyphicon-star"></i>
+                {{obj.name}}
+             </h2>
+             
+             <div class="comment-text">
+                <p>{{obj.identify}}</p><span>{{obj.time}}</span>
+             </div>
+          </div>
+          
+          
+             
+        </div>
+
+        
+     </div>
+   </div>
+  
+  
